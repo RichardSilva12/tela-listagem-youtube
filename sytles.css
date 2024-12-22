@@ -1,0 +1,144 @@
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: white;
+  }
+  
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202020;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    align-items: left;
+    width: 130px;
+    height: 30px;
+  }
+  
+  .search-bar {
+    width: 25%;
+    
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    flex: 1;
+  }
+  
+  .user-options {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Ícone do menu no navbar */
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  margin-right: 10px;
+  align-items: left;
+
+}
+
+/* Layout geral */
+.container {
+  display: flex;
+}
+
+/* Menu lateral (sidebar) */
+.sidebar {
+  width: 20%; /* 20% da largura da tela */
+  background-color: #202020;
+  color: white;
+  padding: 30px 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Sombra no lado direito */
+  height: 130vh; /* Altura total da tela */
+  position: relative; /* Fixa o menu à esquerda */
+  top: 0;
+  left: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+
+.menu-item::before {
+  content: '•'; /* Substitua pelo ícone desejado (pode ser SVG ou Unicode) */
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Ajuste o conteúdo principal */
+.content {
+  margin-left: 20%; /* Empurra o conteúdo para o lado, ajustando com a sidebar */
+  width: 80%;
+  padding: 20px;
+}
+
+  
+
+
+
+
+/* -- */
+  
+  /* Seção de vídeos sugeridos */
+
+  .suggested-videos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 20px; /* Espaçamento entre os vídeos */
+    padding: 20px;
+  }
+
+  .video-item {
+    background-color: #404040;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Alinha conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .video-thumbnail {
+    width: 100%; /* Ocupa toda a largura do container */
+    height: auto; /* Mantém a proporção */
+    border-radius: 4px;
+  }
+
+  .video-info {
+    margin-top: 10px;
+    text-align: left; /* Textos alinhados à esquerda */
+  }
+
+  .video-title {
+    font-size: 16px;
+    color: white;
+    margin: 5px 0;
+  }
+
+  .video-channel {
+    font-size: 14px;
+    color: #aaaaaa;
+  }
